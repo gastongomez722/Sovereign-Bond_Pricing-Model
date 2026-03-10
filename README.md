@@ -2,6 +2,8 @@
 
 This project implements several short-rate interest rate models to price sovereign bonds and analyze model-implied term structures. The goal is find out the reason for the gap between market observed prices and projected fair market values, as market observed values imply unrealistically low implied future short term interest rates. 
 
+Project Report Can be Read Here: https://drive.google.com/file/d/1gR_FQc4BcFJohK53C24rQRPZ58wZFfm9/view?usp=sharing
+
 The project includes implementations of:
 
 - Cox–Ingersoll–Ross (CIR)
@@ -94,6 +96,8 @@ The calibration process involves:
 1. Loading market bond price data  
 2. Computing model-implied prices  
 3. Minimizing pricing error   
+
+This returns a market price of uncertainty, lying around 1.0-1.3 range, depending on the trading session. This is robust to model specification, time till expiry, and even model parameters
 
 ---
 
