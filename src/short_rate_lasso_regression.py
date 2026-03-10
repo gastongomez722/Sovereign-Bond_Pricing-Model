@@ -365,39 +365,6 @@ def plot_forward_curve_from_data(maturities, yields, plot_range_max=5.0):
 
     print("Forward curve plotted successfully.")
 
-juan_durations = np.array([0.10,0.18,0.22,0.26,0.30,0.47,0.55,0.64,0.97,1.18,1.47])
-juan_yields = np.array([0.0205,0.0244,0.0249,0.0249,0.0254,0.0238,0.0241,0.0245,0.0235,0.0235,0.0248])
-# Maturities in years
-arg_durations = [0.03287671,
-0.12054795,
-0.15890411,
-0.19726027,
-0.23561644,
-0.40547945,
-0.48493151,
-0.57260274,
-0.74246575,
-0.90684932,
-1.11780822,
-1.40547945
-
-]
-
-# Corresponding prices
-yields_tna_6mes = [17.1664452,
-24.0895651,
-26.7292689,
-31.2114731,
-30.2696934,
-31.5161469,
-30.9598342,
-31.9134612,
-31.1041495,
-31.1820980,
-30.4643885,
-31.4346521
-
-]
 
 yields_tna = [0.0] * len(yields_tna_6mes)
 for x in range(len(yields_tna_6mes)):
